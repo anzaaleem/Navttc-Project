@@ -1,0 +1,581 @@
+/*------------------------------------------------------------------
+[lexar Stylesheet]
+Project:   lexar - Software HTML5 Landing Page
+Version:    1.1
+Last change:10-27-2019
+-------------------------------------------------------------------*/
+/***** Google fonts import ************/
+@import url("https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700,900");
+/*------------------------------------------------------------------
+[Layout]
+* body
++ Global styles
++ Header / .header
++ hero / benner
++ Start Call Action
++ What people say
++ price
++ Our Team
++ newsletter
++ Form
++ Footer / #footer
++ Responsive
+/*
+============================================
+Global styles
+============================================
+*/
+/*
+01 -  Global styles
+*/
+.ticon{
+  padding-top: 10px;
+}
+.playbtn{
+  padding-top: 25;
+}
+@media(max-width: 991px){
+ i.playbtn{
+  padding-top: 3px;
+  }}
+html,
+body {
+height: 100%;
+}
+body {
+font-family: "Gothic A1", serif;
+background: #fff;
+font-weight: 400;
+font-size: 15px;
+line-height: 1.8;
+-webkit-text-size-adjust: 100%;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+color: #333;
+}
+a,
+button {
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+-webkit-transition: all 0.3s;
+transition: all 0.3s;
+text-decoration: none;
+}
+a,
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+outline: 0 !important;
+text-decoration: none;
+}
+.font-weight-900{
+font-weight: 900;
+}
+.f-50{
+font-size: 50px;
+}
+.btn {
+border-radius: 0px;
+text-transform: uppercase;
+padding: 12px 30px;
+font-size: 12px;
+}
+.section {
+padding: 100px 0px;
+position: relative;
+}
+.pb-70 {
+padding-bottom: 70px;
+}
+.pb-50 {
+padding-bottom: 50px;
+}
+.mb-50{
+margin-bottom: 50px;
+}
+.mb-30{
+margin-bottom: 30px;
+}
+.mt-30{
+margin-top: 30px;
+}
+.space-40 {
+height: 40px;
+width: 100%
+}
+.space-50 {
+height: 50px;
+width: 100%
+}
+.text-primary {
+color: #627aec !important;
+}
+.btn-primary {
+color: #fff;
+background-color: #627aec;
+border-color: #627aec;
+}
+.btn-dark:hover {
+color: #fff;
+background-color: #627aec;
+border-color: #627aec;
+}
+.btn.btn-round{ border-radius: 50px; }
+.bg-dark {
+background-color: #22232f !important;
+}
+.btn-outline-primary {
+color: #627aec;
+border-color: #627aec;
+}
+.bg-section {
+background-color: #f5f5f5;
+}
+.srction_title p {
+color: #000000;
+font-size: 18px;
+}
+/*02 Header*/
+div#header-sticky-wrapper {
+position: absolute;
+width: 100%;
+left: 0px;
+top: 0px;
+z-index: 999;
+}
+.navbar{
+padding: 0px 15px;
+}
+.is-sticky header {
+background-color: #22232f;
+}
+.bg-light.navbar-transparent {
+background-color: transparent !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+color: #627aec;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+color: rgb(98, 122, 236);
+}
+.navbar-light .navbar-nav .nav-link {
+color: #fff;
+padding: 0 20px;
+text-transform: uppercase;
+}
+header .navbar-nav  > li > a:not(.btn){ position: relative; line-height: 75px; }
+header .navbar-nav  > li >  a:not(.btn):before {
+content: "";
+position: absolute;
+right: 0;
+bottom: 0;
+width: 0px;
+height: 2px;
+background-color: #627aec;
+transition: 0.3s;
+}
+header .navbar-nav  > li >  a:not(.btn):hover:before,header .navbar-nav  > li > a.active:not(.btn-round ):before {
+width: 100%;
+left: 0;
+right: auto;
+}
+.navbar-light .navbar-toggler {
+color: rgba(0,0,0,.5);
+border-color: rgba(0,0,0,.1);
+background-color: #fff;
+}
+
+
+/*hero*/
+
+
+.hero.section {
+padding-top: 200px;
+max-height: 800px; min-height: 800px;
+margin-bottom: 100px;
+}
+.home-desk {
+margin-bottom: -200px;
+}
+/*Box card*/
+.bg-box {
+background-color: #f5f5f5;
+}
+.box.bg-box { padding: 30px 30px; }
+.box h3{
+font-size: 24px;
+font-weight: bold;
+color: #000000; margin-bottom: 20px;
+}
+.box.bg-box .icon {
+font-size: 30px;
+width: 80px;
+height: 80px;
+margin: 0 auto;
+border: 1px solid;
+display: block;
+line-height: 80px;
+margin-bottom: 20px;
+border-radius: 100%;
+text-align: center;
+padding-top: 20px;
+}
+.box .media h3 {
+margin-bottom: 10px;
+}
+.box.bg-box:hover{
+background-color: #627aec;
+}
+.box.bg-box:hover .icon{
+background-color: #fff;
+color: #fff;
+}
+.box.bg-box:hover h3,.box.bg-box:hover p{
+color: #fff;
+}
+/*-- ==== Start Call Action  ==== */
+.call_action .icon {
+width: 120px;
+height: 120px;
+background-color: #fff;
+border-radius: 100%;
+line-height: 125px;
+font-size: 40px;
+text-align: center;
+color: #627aec;
+margin: 0 auto 40px;
+padding-top: 15px;
+}
+/*What people say*/
+span.blockquote_icon {
+position: absolute;
+right: 0;
+font-size: 150px;
+display: block;
+bottom: 84px;
+line-height: 0;
+color: #f0f0f0;
+transform: rotate(-180deg);
+pointer-events: none;
+padding-top: 15px;
+}
+.what_say_sldier .media {
+position: relative;
+}
+.owl-dots .owl-dot {
+width: 10px;
+height: 10px;
+background: #ddd;
+border-radius: 100%;
+margin: 0 5px;
+}
+.owl-dots {
+display: flex;
+justify-content: center; margin-top: 30px;
+}
+.owl-dots .owl-dot.active {
+background-color: #000;
+}
+/*price*/
+section.section.pricing {
+position: relative;
+}
+section.section.pricing .bg_box {
+position: absolute;
+width: 100%;
+height: 450px;
+top: 0;
+background-repeat: no-repeat;
+background-size: cover;
+}
+section.section.pricing .container {
+position: relative;
+z-index: 10;
+}
+.card.price_box {
+box-shadow: 2.5px 4.33px 20px rgba(0,0,0,0.2);
+background-color: transparent;
+text-align: center;
+padding: 30px;
+}
+.card.price_box h2 {
+font-size: 15px;
+line-height: 40px;
+font-weight: 700;
+}
+.card.price_box h3 {
+font-size: 48px;
+line-height: 40px;
+font-weight: 900;
+text-align: center;
+}
+.card.price_box h3 sub{
+font-size: 24px; bottom: 0px; margin: 0 5px;
+}
+.card.price_box ul li{
+font-size: 16px;
+line-height: 45px;
+color: #939499;
+font-weight: 400;
+text-align: center;
+}
+.card.price_box.active {
+border: 2px solid rgba(255,255,255,0.04);
+}
+.pricing_slider .item {
+padding: 20px;
+}
+/*Our Team */
+.team_img {
+width: 255px;
+height: 256px;
+border-radius: 128px;
+background-color: #ffffff;
+border: 6px solid #a9aaae;
+text-align: center;
+padding: 30px; margin: 0 auto;
+}
+.team_img img{
+border-radius: 100%;
+}
+.social li a {
+background-color: transparent;
+border-radius: 100%;
+color: #828282; border:1px solid #828282;
+float: left;
+font-size: 14px;
+height: 36px;
+line-height: 36px;
+margin: 0;
+padding: 0;
+text-align: center;
+width: 36px;
+position: relative;
+}
+.social li a:hover {
+background-color: #627aec;
+color: #fff; border:1px solid #627aec;
+}
+.team-box:hover .team_img{  border: 6px solid #627aec;  }
+/*newsletter*/
+.newsletter_input input.form-control {
+height: 60px;
+border-radius: 60px;
+}
+.newsletter_input {
+position: relative;
+}
+.newsletter_input .btn {
+position: absolute;
+right: 12px;
+top: 7px;
+min-width: 140px;
+}
+.newsletter_input .btn i{
+margin-left: 5px;
+}
+/*Form*/
+.form-control {
+border: 1px solid #ebebeb;
+width: 100%;
+max-width: 100%;
+color: #989ca2;
+background: 0 0;
+min-height: 60px;
+padding: 10px 15px;
+box-shadow: none;
+outline: none;
+}
+.form-control:focus{
+box-shadow: none;
+outline: none;
+}
+/*Footer*/
+.footer_menu a {
+font-weight: 300;
+padding: 0 15px;
+border-right: 1px solid #757575; color: #000; text-transform: uppercase; }
+.footer_menu a:hover{
+color: #627aec;
+}
+.footer_menu ul li {
+display: inline-block; }
+.footer_menu ul li:last-child a {
+border-right: none; }
+.footer_copywrite_area {
+display: block;
+padding: 30px 0 100px 0; }
+.footer_social_area {
+margin-bottom: 30px; }
+.footer_social_area a {
+border-radius: 50%;
+height: 40px;
+text-align: center;
+width: 40px; color: #000;
+display: inline-block;
+background-color: #ffffff;
+line-height: 40px;
+box-shadow: none;
+margin: 0 5px; }
+.footer_social_area a i {
+line-height: 36px; }
+.footer_social_area a:hover, .footer_social_area a:focus {
+color: #ffffff;    background-color: #627aec;
+border-color: #627aec; }
+.footer_bottom_area {
+display: block;
+position: relative;
+text-align: center; }
+.footer_bottom_area .item {
+margin-bottom: 50px; }
+.footer_bottom p {
+margin: 0;
+font-size: 14px; }
+.contact_location h3 {
+font-size: 26px;
+font-weight: 900;
+padding-bottom: 10px;
+}
+.contact_location p {
+line-height: 40px;
+font-size: 20px;
+color: #677294;
+}
+.contact_location ul{
+margin-bottom: 0px;
+}
+.contact_location .location_info li {
+font-size: 20px;
+color: #677294;
+margin-bottom: 15px;
+}
+.contact_location .location_info li:last-child{
+margin-bottom: 0px;
+}
+.contact_location .location_info li a{
+font-size: 20px;
+color: #677294;
+
+}
+.contact_location a:hover,.contact_location .location_info li a:hover{
+color: #627aec;
+}
+.contact_location .location_info li i {
+margin-right: 15px; color: #627aec;
+}
+p.help-block ul {
+font-size: 13px;
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+p.help-block {
+margin: 0px;
+position: absolute;
+left: 0;
+}
+.form-group {
+position: relative;
+margin-bottom: 23px;
+}
+/*Responsive */
+@media(max-width: 991px){
+header#header{
+padding: 15px 0px;
+}
+.f-50 {
+font-size: 36px;
+}
+.lead {
+font-size: 1rem;}
+.home-desk,.hero.section {
+margin-bottom: 0;
+}
+.box.bg-box .icon {
+font-size: 20px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+padding-top: 15px;
+}
+.h1, h1 {
+font-size: 1.7rem;
+}
+.box.bg-box {
+padding: 30px 15px;
+}
+.box h3 {
+font-size: 20px;}
+.call_action .icon {
+width: 70px;
+height: 70px;
+padding-top: 15px;
+border-radius: 100%;
+line-height: 70px;
+
+}
+.srction_title p {
+color: #000000;
+font-size: 14px;
+}
+.card.price_box h3 {
+font-size: 32px;}
+section.section.pricing .bg_box {
+position: absolute;
+width: 100%;
+height: 490px;}
+.team_img {
+width: 206px;
+height: 206px;
+border-radius: 128px;
+border-width: 4px;
+padding: 10px;
+margin: 0 auto;
+}
+header .navbar-nav > li > a:not(.btn) {
+    position: relative;
+    line-height: 45px;
+}
+.btn {
+  
+    padding: 12px 20px;
+    
+}
+}
+@media(max-width: 640px){
+.f-50 {
+font-size:30px;
+}
+}
+
+
+
+/*loader*/
+
+.loader_pre{
+    position: fixed;width: 100%;left: 0px; height: 100%; top: 0; background-color: #000; z-index: 100000;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  border: 20px #ddd double;
+  border-top: 20px double #627aec;
+  border-radius: 100%;
+  box-shadow: 0px 0px 5px inset #ccc;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
